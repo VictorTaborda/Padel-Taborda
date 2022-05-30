@@ -4,6 +4,39 @@
     box-sizing: border-box;
 }
 
+.logonav {
+    height: 3em;
+}
+
+.navegador {
+    background-color: #135fcc;
+}
+
+.nav-link{
+    color: white  !important;
+    font-weight: bold;
+    padding: 20px !important;
+}
+.nav-link:hover{
+    color: red !important;
+    background-color: #135fcc;
+}
+.carouselimg{
+    width: 80%;
+    height: 400px;
+    align-items: center;
+}
+.contenedorCarousel{
+    height: 400px;
+    width: 100%;
+    text-align: center !important;
+    padding: 30px;
+
+}
+
+
+
+/*
 body {
     display: grid;
     grid-template-areas: "header""menu""footer";
@@ -32,7 +65,7 @@ body {
 }
 
 .nose img {
-    height: 4em;
+    height: 2em;
     padding: 0em 1em;
 
 
@@ -590,7 +623,7 @@ footer {
         position: relative;
         width: 800px;
         height: 300px;
-        right: 270px;
+        right: 270px;12
     }
 
     ul.slider li {

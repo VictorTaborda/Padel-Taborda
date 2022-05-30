@@ -9,40 +9,81 @@
     <link rel="icon" href="./img/paddle_sport_padel_icon_141852.ico">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/estilo.css">
 </head>
 
 <body>
     <header class="a">
-        <div class="cointeinerNav">
-            <div class="nose">
-                <a href="index.html"><img src="./img/Logo.jpeg" alt="logoPuntoDeOro"></a>
-                <h1 class="nombre">Punto de Oro Padel</h1>
+        <nav class="navbar navbar-expand-lg navbar-light navegador">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="logonav" src="./img/Logo.jpeg" alt="logoPuntoDeOro"> Punto
+                    de Oro Padel</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./page/Torneos.html">Torneos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./page/Sponsors.html">Sponsors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./page/Academia.html">Academia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./page/Promos.html">Promos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/page/Contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-success" type="submit">buscar</button>
+                    </form>
+                </div>
             </div>
-            <nav class="navegador">
-                <ul>
-                    <li><a class="navinicio" href="index.html"> Inicio</a></li>
-                    <li><a class="navtorneo" href="./page/Torneos.html">Torneos</a></li>
-                    <li><a class="navsponsor" href="./page/Sponsors.html">Sponsors</a></li>
-                    <li><a class="navacademia" href="./page/Academia.html"> Academia</a></li>
-                    <li><a class="navpromo" href="./page/Promos.html">Promos</a></li>
-                    <li><a class="navcontacto" href="./page/Contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+        </nav>
     </header>
     <main class="b">
-        <div class="cointeiner2">
-            <ul class="slider">
-                <li id="slide1"><img class="slide" src="./img/cancha2.jpg" alt="slide1"></li>
-                <li id="slide2"><img src="./img/Slide1!.jpg" alt="slide2"></li>
-                <li id="slide3"><img src="./img/Slide3!.jpg" alt="slide3"></li>
-            </ul>
-            <ul class="menu">
-                <li><a href="#slide1">1</a></li>
-                <li><a href="#slide2">2</a></li>
-                <li><a href="#slide3">3</a></li>
-            </ul>
+
+        <div id="carouselExampleFade" class="carousel slide carousel-fade carousel10 " data-bs-ride="carousel">
+            <div class="carousel-inner contenedorCarousel">
+                <div class="carousel-item active contenedorCarousel ">
+                    <img src="./img/cancha2.jpg" class="carouselimg " alt="slide1" >
+                </div>
+                <div class="carousel-item ">
+                    <img src="./img/Slide1!.jpg" class="carouselimg" alt="slide2" >
+                </div>
+                <div class="carousel-item ">
+                    <img src="./img/Slide3!.jpg" class="carouselimg" alt="slide3" width="780px"  >
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        ---------------------------------------------------------------------------------
+
+       
+
         </div>
         <div class="cajacontenedora1">
             <div class="cajaPrincipal">
@@ -158,6 +199,9 @@
                     src="./img/FED-ARG-PADEL.png" alt="federacion"></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,51 @@
+footer {
+    background-color: map-get($colores-web, primario);
+    @include position(flex, column, center, center);
+    text-align: center;
+    transition: 0.5s;
+
+    
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 1.2em;
+        padding: 4px;
+
+        &:hover {
+            color: map-get($colores-web, hover)
+        }
+    }
+
+    p,
+    div {
+        margin: 10px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        padding: 6px;
+    }
+
+    @media screen and (min-width:#{$tablets}) {
+        font-size: 1em;
+
+        p {
+            margin: auto;
+        }
+
+        div {
+
+            ul {
+                @include position(flex, row, center, center);
+                text-align: center;
+            }
+        }
+    }
+
+}

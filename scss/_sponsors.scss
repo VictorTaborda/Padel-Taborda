@@ -1,0 +1,19 @@
+.fondosponsor{
+    background-color: map-get($colores-web, primario );
+    img{
+        margin: 5px;
+        &:hover{
+            border-radius:20%;
+            -webkit-border-radius:20%;
+            box-shadow: 0px 0px 15px 15px map-get($colores-web , hover );
+            -webkit-box-shadow: 0px 0px 15px 15px map-get($colores-web , hover );
+            }
+
+    }
+    h2,h3{
+        color: map-get($colores-web, invertido);
+        text-decoration: underline;
+        letter-spacing: 5px;
+        margin: 50px;
+    }
+}

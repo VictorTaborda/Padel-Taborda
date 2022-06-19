@@ -1,0 +1,28 @@
+header {}
+
+.navegador {
+    img {
+        @include sizes(auto, 3em);
+    }
+
+    background-color: map-get($colores-web, primario);
+
+    .tituloPuntodeoro {
+        font-size: 1em;
+        font-style: italic;
+        font-weight: bold;
+        color: map-get($colores-web, texto);
+        padding-right: 10px;
+    }
+
+    .nav-link {
+        @extend .tituloPuntodeoro;
+        font-style: normal;
+        margin-left: 30px;
+
+        &:hover {
+            color: map-get($colores-web, hover) !important;
+        }
+
+    }
+}

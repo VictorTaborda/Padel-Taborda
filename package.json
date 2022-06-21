@@ -1,7 +1,7 @@
 {
   "name": "padel-taborda",
   "version": "1.0.0",
-  "description": "",
+  "description": "este sitio se encontra la descripcion de club de padel punto de oro, podran reservar turnos, e informarse por clases o torneos",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
